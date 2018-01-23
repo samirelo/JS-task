@@ -1,5 +1,5 @@
 .task {
-  height: 100px;
+  height: auto;
   margin: 5%;
   background-color: #eee;
   border: 1px solid #aaa;
@@ -47,4 +47,23 @@
 #sliderbuttonright {
   position: relative;
   left: 90%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  margin: 10px 0;
+  border: solid 1px;
+  padding: 2px 4px;
+  font: 15px;
+}
+
+th {
+  font-weight: bold;
+}
+
+td {
+  text-align: center;
 }

@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="scripts.js"></script>
-  </head>
 
-  <body>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="scripts.js"></script>
+</head>
 
-    <!-- calculator -->
-    <div class="task">
-      <h4>calculator</h4>
+<body>
+
+  <!-- calculator -->
+  <div class="task">
+    <h4>calculator</h4>
+  </div>
+  <!-- END calculator -->
+
+  <!-- form -->
+  <div class="task">
+    <h4>form</h4>
+  </div>
+  <!-- END form -->
+
+  <!-- image slider -->
+  <div class="task" id="imageslider">
+    <img id="myimage" src="./images/image_1.jpg" height="100%" width="100%">
+    <div class="slidertask" id="sliderbuttons">
+      <button class="sliderbutton" id="sliderbuttonleft" type="button" onclick="changeSliderImage('left')">&#10094;</button>
+      <button class="sliderbutton" id="sliderbuttonright" type="button" onclick="changeSliderImage('right')">&#10095;</button>
     </div>
-    <!-- END calculator -->
+  </div>
+  <!-- END image slider -->
 
-    <!-- form -->
-    <div class="task">
-      <h4>form</h4>
-    </div>
-    <!-- END form -->
+  <!-- table -->
+  <div class="task">
+    <h4>table</h4>
+    <table style="width: 100%" id="table">
+      <tr>
+        <th>Id</th>
+        <th onclick="sortTable()" style="cursor: pointer">Name</th>
+        <th>Username</th>
+        <th>Email</th>
+      </tr>
+    </table>
+    <script>
+      getData();
+    </script>
+  </div>
+  <!-- END table -->
 
-    <!-- image slider -->
-    <div class="task" id="imageslider">
-      <img id="myimage" src="./images/image_1.jpg" height="100%" width="100%">
-      <div class="slidertask" id="sliderbuttons">
-        <button class="sliderbutton" id="sliderbuttonleft" type="button" onclick="changeSliderImage('left')">&#10094;</button>
-        <button class="sliderbutton" id="sliderbuttonright" type="button" onclick="changeSliderImage('right')">&#10095;</button>
-      </div>
-    </div>
-    <!-- END image slider -->
+  <!-- to-do list -->
+  <div class="task">
+    <h4>to-do list</h4>
+  </div>
+  <!-- END to-do list -->
 
-    <!-- table -->
-    <div class="task">
-      <h4>table</h4>
-    </div>
-    <!-- END table -->
+</body>
 
-    <!-- to-do list -->
-    <div class="task">
-      <h4>to-do list</h4>
-    </div>
-    <!-- END to-do list -->
-
-  </body>
 </html>
