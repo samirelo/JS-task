@@ -1,41 +1,54 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="scripts.js"></script>
-  </head> 
 
-  <body>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="scripts.js"></script>
+</head>
 
-    <!-- calculator -->
-    <div class="task">
-      <h4>calculator</h4>
-    </div>
-    <!-- END calculator -->
+<body>
 
-    <!-- form -->
-    <div class="task">
-      <h4>form</h4>
-    </div>
-    <!-- END form -->
+  <!-- calculator -->
+  <div class="task">
+    <h4>calculator</h4>
+  </div>
+  <!-- END calculator -->
 
-    <!-- image slider -->
-    <div class="task">
-      <h4>image slider</h4>
-    </div>
-    <!-- END image slider -->
+  <!-- form -->
+  <div class="task">
+    <h4>form</h4>
+  </div>
+  <!-- END form -->
 
-    <!-- table -->
-    <div class="task">
-      <h4>table</h4>
-    </div>
-    <!-- END table -->
+  <!-- image slider -->
+  <div class="task">
+    <h4>image slider</h4>
+  </div>
+  <!-- END image slider -->
 
-    <!-- to-do list -->
-    <div class="task">
-      <h4>to-do list</h4>
-    </div>
-    <!-- END to-do list -->
-      
-  </body>
+  <!-- table -->
+  <div class="task">
+    <h4>table</h4>
+    <table style="width: 100%" id="table">
+      <tr>
+        <th>Id</th>
+        <th onclick="sortTable()" style="cursor: pointer">Name</th>
+        <th>Username</th>
+        <th>Email</th>
+      </tr>
+    </table>
+    <script>
+      getData();
+    </script>
+  </div>
+  <!-- END table -->
+
+  <!-- to-do list -->
+  <div class="task">
+    <h4>to-do list</h4>
+  </div>
+  <!-- END to-do list -->
+
+</body>
+
 </html>

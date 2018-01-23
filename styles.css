@@ -1,7 +1,7 @@
 .task {
-  height: 100px;
+  height: auto;
   margin: 5%;
-  background-color: #eee; 
+  background-color: #eee;
   border: 1px solid #aaa;
 }
 
@@ -11,4 +11,23 @@
   text-align: center;
   letter-spacing: 10px;
   text-transform: uppercase;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  margin: 10px 0;
+  border: solid 1px;
+  padding: 2px 4px;
+  font: 15px;
+}
+
+th {
+  font-weight: bold;
+}
+
+td {
+  text-align: center;
 }
